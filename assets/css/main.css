@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	height: 100%;
 }
 
 ol, ul {
@@ -116,7 +117,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: black;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 17pt;
 		font-weight: 300;
@@ -181,7 +182,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: black;
 		font-weight: 600;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
@@ -3114,8 +3115,6 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #2a2f4a;
-		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
 		height: 3.25em;
@@ -3380,7 +3379,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner.jpg");
+		background: linear-gradient(90deg, #ff4a86, #ff4e5b, #fe9a55, #fec759);
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3392,7 +3391,7 @@ input, select, textarea {
 		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
-		height: 60vh;
+		height: 100vh;
 		margin-bottom: -3.25em;
 		max-height: 32em;
 		min-height: 22em;
@@ -3410,12 +3409,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #ff4e5b;
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.85;
+			opacity: 0.15;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3474,16 +3473,20 @@ input, select, textarea {
 				}
 
 				#banner > .inner .content p {
-					font-size: 0.7em;
-					font-weight: 600;
-					letter-spacing: 0.25em;
-					text-transform: uppercase;
+					font-size: 1em;
+					font-weight: 300;
+					letter-spacing: 0.15em;
 				}
 
 		#banner.major {
-			height: 75vh;
+			height: 100vh;
 			min-height: 30em;
 			max-height: 50em;
+			color: white;
+		}
+
+		#banner h1 {
+			color: white;
 		}
 
 			#banner.major.alt {
@@ -3589,7 +3592,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #2a2f4a;
+		background: white;	
 	}
 
 		#main > * {
@@ -3748,6 +3751,7 @@ input, select, textarea {
 		-ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		padding-top: 3.25em;
+		height: 100%;
 	}
 
 		#wrapper.is-transitioning {
